@@ -44,9 +44,9 @@ const WeatherDetails = () => {
     }
 
 
-    useEffect(() => {
+    useEffect(function(){
         search()
-    }, [])
+    },[])
 
     const imageUrl = weather && weather.weather && weather.weather[0] && `https://openweathermap.org/img/wn/${weather.weather[0].icon}.png`
 
